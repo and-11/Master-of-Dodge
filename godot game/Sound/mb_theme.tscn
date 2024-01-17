@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8cbgxx6136xu"]
+
+[ext_resource type="AudioStream" uid="uid://by688lolraafi" path="res://Sound/Megalo Box Theme Song - MEGALOBOX by mabanua - メガロボクス Main OST.mp3" id="1_lq8u1"]
+
+[node name="MBTheme" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_lq8u1")
+autoplay = true

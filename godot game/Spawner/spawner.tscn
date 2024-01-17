@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://bmu8p8d4hgpko"]
+
+[ext_resource type="Script" path="res://Spawner/spawner.gd" id="1_86nx7"]
+[ext_resource type="Texture2D" uid="uid://d3g8yu64t03ud" path="res://Assets/Fire/burning_start_1.png" id="2_sk2hg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxwib"]
+atlas = ExtResource("2_sk2hg")
+region = Rect2(0, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s587q"]
+atlas = ExtResource("2_sk2hg")
+region = Rect2(24, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ivid2"]
+atlas = ExtResource("2_sk2hg")
+region = Rect2(48, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_prrji"]
+atlas = ExtResource("2_sk2hg")
+region = Rect2(72, 0, 24, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q6u6t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxwib")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s587q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ivid2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_prrji")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="Spawner" type="AnimatedSprite2D"]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_q6u6t")
+frame = 1
+frame_progress = 0.54764
+script = ExtResource("1_86nx7")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.3
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,157 @@
+[gd_scene load_steps=21 format=3 uid="uid://kvm0cygrs2jv"]
+
+[ext_resource type="Script" path="res://Scenes/main.gd" id="1_fvy4y"]
+[ext_resource type="Texture2D" uid="uid://c8lpsbjiqnypp" path="res://Assets/PlayerDODGE/Hobbit - run1.png" id="2_4wgvr"]
+[ext_resource type="Texture2D" uid="uid://clnhg7mutdacm" path="res://Assets/PlayerDODGE/Hobbit - run2.png" id="3_kugtm"]
+[ext_resource type="Texture2D" uid="uid://vk178mjr08w5" path="res://Assets/PlayerDODGE/Hobbit - run3.png" id="4_wg0qe"]
+[ext_resource type="Texture2D" uid="uid://c7jyqs7c1leu0" path="res://Assets/PlayerDODGE/Hobbit - run4.png" id="5_kgwx1"]
+[ext_resource type="Texture2D" uid="uid://cw46dickv3qbj" path="res://Assets/PlayerDODGE/Hobbit - run5.png" id="6_2ewec"]
+[ext_resource type="Texture2D" uid="uid://cpi753038qskl" path="res://Assets/PlayerDODGE/Hobbit - run6.png" id="7_qpxat"]
+[ext_resource type="Texture2D" uid="uid://b073uukxtut64" path="res://Assets/PlayerDODGE/Hobbit - run7.png" id="8_68m1m"]
+[ext_resource type="Texture2D" uid="uid://o4ylrf0fgeo2" path="res://Assets/PlayerDODGE/Hobbit - run8.png" id="9_fmn6x"]
+[ext_resource type="Texture2D" uid="uid://b5hnbxldv4wja" path="res://Assets/PlayerDODGE/Hobbit - run9.png" id="10_iesvq"]
+[ext_resource type="Texture2D" uid="uid://86omkegckr48" path="res://Assets/PlayerDODGE/Hobbit - run10.png" id="11_cif41"]
+[ext_resource type="Texture2D" uid="uid://bus1j7v6tn74v" path="res://Assets/PlayerDODGE/Hobbit - stop1.png" id="12_nxm70"]
+[ext_resource type="Texture2D" uid="uid://dkkrnubeysjmc" path="res://Assets/PlayerDODGE/Hobbit - stop2.png" id="13_nfqyy"]
+[ext_resource type="Texture2D" uid="uid://1lhhjp6jeeq0" path="res://Assets/PlayerDODGE/Hobbit - stop3.png" id="14_kgmlw"]
+[ext_resource type="Texture2D" uid="uid://dsypsfnib3gc3" path="res://Assets/PlayerDODGE/Hobbit - stop4.png" id="15_4mie0"]
+[ext_resource type="Texture2D" uid="uid://cdupm1m3hg0dk" path="res://Assets/PlayerDODGE/Hobbit - stop5.png" id="16_atcgo"]
+[ext_resource type="Texture2D" uid="uid://780acdbow7pq" path="res://Assets/PlayerDODGE/Hobbit - stop6.png" id="17_1hwmp"]
+[ext_resource type="Texture2D" uid="uid://bf8sf518gvf6c" path="res://Assets/PlayerDODGE/Hobbit - stop7.png" id="18_uke1v"]
+[ext_resource type="Texture2D" uid="uid://hsepl0n5mc5g" path="res://Assets/PlayerDODGE/Hobbit - stop8.png" id="19_hxksb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bi3ra"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4wgvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_kugtm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wg0qe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_kgwx1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2ewec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qpxat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_68m1m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_fmn6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_iesvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cif41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nxm70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_nfqyy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_kgmlw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4mie0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_atcgo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_1hwmp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_uke1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_hxksb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_fvy4y")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -227.0
+offset_top = -62.0
+offset_right = -187.0
+offset_bottom = -22.0
+scale = Vector2(21.2261, 26.1146)
+color = Color(0.247059, 0.247059, 0.247059, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(165, 93)
+zoom = Vector2(6, 6)
+
+[node name="Play" type="Button" parent="."]
+offset_left = 25.0
+offset_top = 41.0
+offset_right = 66.0
+offset_bottom = 72.0
+scale = Vector2(1.16164, 1.16164)
+text = "Play"
+flat = true
+
+[node name="Help" type="Button" parent="."]
+offset_left = 25.0
+offset_top = 75.0
+offset_right = 69.0
+offset_bottom = 106.0
+scale = Vector2(1.16164, 1.16164)
+text = "Help
+"
+flat = true
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 25.0
+offset_top = 109.0
+offset_right = 67.0
+offset_bottom = 140.0
+scale = Vector2(1.16164, 1.16164)
+text = "Quit
+"
+flat = true
+
+[node name="How to" type="Label" parent="."]
+visible = false
+offset_left = 139.0
+offset_top = 96.0
+offset_right = 297.0
+offset_bottom = 171.0
+text = "use W A S D to move
+use SPACE to atack
+use SHIFT to dodge
+"
+
+[node name="Title" type="Label" parent="."]
+offset_left = 81.0
+offset_top = 20.0
+offset_right = 209.0
+offset_bottom = 43.0
+scale = Vector2(1.88, 1.88)
+text = "Master of Dodge"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(279, 146)
+scale = Vector2(3.4563, 3.4563)
+sprite_frames = SubResource("SpriteFrames_bi3ra")
+frame_progress = 0.0913939
+flip_h = true
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Help" to="." method="_on_help_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

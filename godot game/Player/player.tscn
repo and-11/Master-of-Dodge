@@ -1,0 +1,321 @@
+[gd_scene load_steps=52 format=3 uid="uid://d2lqwfq2p6e57"]
+
+[ext_resource type="Script" path="res://Player/player.gd" id="1_3oddf"]
+[ext_resource type="Texture2D" uid="uid://dpkm4t825ivey" path="res://Assets/PlayerIdle/Hobbit - Idle1.png" id="2_mbwod"]
+[ext_resource type="Texture2D" uid="uid://c6ati7lesy6si" path="res://Assets/PlayerIdle/Hobbit - Idle2.png" id="3_xpsv0"]
+[ext_resource type="Texture2D" uid="uid://m6l8vu630wa5" path="res://Assets/PlayerAtack/Hobbit - block8.png" id="4_fev0h"]
+[ext_resource type="Texture2D" uid="uid://b1cgd8aw47h8t" path="res://Assets/PlayerIdle/Hobbit - Idle3.png" id="4_n778e"]
+[ext_resource type="Texture2D" uid="uid://exwjp7hwue6f" path="res://Assets/PlayerIdle/Hobbit - Idle4.png" id="5_n2lpq"]
+[ext_resource type="Texture2D" uid="uid://ck68fvfn02gi0" path="res://Assets/PlayerRun/Hobbit - run1.png" id="6_w6lge"]
+[ext_resource type="Texture2D" uid="uid://dxmy285yd51we" path="res://Assets/PlayerRun/Hobbit - run2.png" id="7_5x8wa"]
+[ext_resource type="Texture2D" uid="uid://bq4qmomthdjsg" path="res://Assets/PlayerRun/Hobbit - run3.png" id="8_j6h2b"]
+[ext_resource type="Texture2D" uid="uid://duhbaw6qp1dms" path="res://Assets/PlayerRun/Hobbit - run4.png" id="9_ml7ln"]
+[ext_resource type="Texture2D" uid="uid://htdry4p2gstl" path="res://Assets/PlayerRun/Hobbit - run5.png" id="10_hktg5"]
+[ext_resource type="Texture2D" uid="uid://c5yykwedwmsek" path="res://Assets/PlayerRun/Hobbit - run6.png" id="11_afe34"]
+[ext_resource type="Texture2D" uid="uid://bv0bambwnwyu7" path="res://Assets/PlayerDeath/Hobbit - death1.png" id="11_t5dwt"]
+[ext_resource type="Texture2D" uid="uid://bx3mn54gyhvxq" path="res://Assets/PlayerRun/Hobbit - run7.png" id="12_73pjh"]
+[ext_resource type="Texture2D" uid="uid://diq6k61tt02iu" path="res://Assets/PlayerDeath/Hobbit - death2.png" id="12_ycrxa"]
+[ext_resource type="Texture2D" uid="uid://dg34ddc2ewg4f" path="res://Assets/PlayerDeath/Hobbit - death3.png" id="13_ar42b"]
+[ext_resource type="Texture2D" uid="uid://dt4io620glquy" path="res://Assets/PlayerRun/Hobbit - run8.png" id="13_bssm4"]
+[ext_resource type="Texture2D" uid="uid://bvaudpiihce2l" path="res://Assets/PlayerDeath/Hobbit - death4.png" id="14_cy74g"]
+[ext_resource type="Texture2D" uid="uid://bvb6sjq1nxlwt" path="res://Assets/PlayerRun/Hobbit - run9.png" id="14_ut1bw"]
+[ext_resource type="Texture2D" uid="uid://b0jskubykba1m" path="res://Assets/PlayerDeath/Hobbit - death5.png" id="15_1h404"]
+[ext_resource type="Texture2D" uid="uid://csg4vufjel2hb" path="res://Assets/PlayerRun/Hobbit - run10.png" id="15_1hoq8"]
+[ext_resource type="Texture2D" uid="uid://c6l4lwut73x7c" path="res://Assets/Atack/1.png" id="16_iego5"]
+[ext_resource type="Texture2D" uid="uid://6ysdgywsguy6" path="res://Assets/PlayerDeath/Hobbit - death6.png" id="16_r3lwi"]
+[ext_resource type="Texture2D" uid="uid://bfn2eh5vvslwh" path="res://Assets/PlayerDeath/Hobbit - death7.png" id="17_s16fp"]
+[ext_resource type="Texture2D" uid="uid://b34ads2ef0o0a" path="res://Assets/Atack/2.png" id="17_vbefn"]
+[ext_resource type="Texture2D" uid="uid://cbj4smrpn75dq" path="res://Assets/PlayerDeath/Hobbit - death8.png" id="18_jq7l3"]
+[ext_resource type="Texture2D" uid="uid://bp5c7tj888thy" path="res://Assets/Atack/3.png" id="18_yqqp4"]
+[ext_resource type="Texture2D" uid="uid://ddy441ieiinm2" path="res://Assets/Atack/4.png" id="19_3fyj3"]
+[ext_resource type="Texture2D" uid="uid://d1bdvmbfo23df" path="res://Assets/PlayerDeath/Hobbit - death9.png" id="19_ny5vg"]
+[ext_resource type="Texture2D" uid="uid://cg82xuqys18hn" path="res://Assets/Atack/5.png" id="20_f4uy8"]
+[ext_resource type="Texture2D" uid="uid://b44x3fssc3vvo" path="res://Assets/PlayerDeath/Hobbit - death10.png" id="20_mb08f"]
+[ext_resource type="Texture2D" uid="uid://c6y4qcb0mjhmr" path="res://Assets/PlayerDeath/Hobbit - death11.png" id="21_loadq"]
+[ext_resource type="Texture2D" uid="uid://cnvtimheoy5t3" path="res://Assets/Atack/6.png" id="21_no5to"]
+[ext_resource type="Texture2D" uid="uid://wha8il2ltbxy" path="res://Assets/Atack/7.png" id="22_826cn"]
+[ext_resource type="Texture2D" uid="uid://covd5sjpmyjix" path="res://Assets/PlayerDeath/Hobbit - death12.png" id="22_omx63"]
+[ext_resource type="Texture2D" uid="uid://bvib5hgxpqy7a" path="res://Assets/PlayerDODGE/Hobbit - jumpt1.png" id="23_gqlbs"]
+[ext_resource type="Texture2D" uid="uid://cq2wpu4ju30cn" path="res://Assets/Atack/8.png" id="23_prwt1"]
+[ext_resource type="Texture2D" uid="uid://dfrxjjhup4jhy" path="res://Assets/PlayerDODGE/Hobbit - jumpt2.png" id="24_v7t0x"]
+[ext_resource type="Texture2D" uid="uid://d11b1qlwtc7cc" path="res://Assets/PlayerDODGE/Hobbit - jumpt3.png" id="25_yudak"]
+[ext_resource type="Texture2D" uid="uid://dnrasoqp8vnu5" path="res://Assets/PlayerDODGE/Hobbit - jumpt4.png" id="26_4iiv4"]
+[ext_resource type="Texture2D" uid="uid://caqxjfrs4mbep" path="res://Assets/PlayerDODGE/Hobbit - jumpt5.png" id="27_xwfdi"]
+[ext_resource type="Texture2D" uid="uid://useqfbv0ja7e" path="res://Assets/PlayerDODGE/Hobbit - jumpt6.png" id="28_u401j"]
+[ext_resource type="Texture2D" uid="uid://bgq8drbionjyf" path="res://Assets/PlayerDODGE/Hobbit - jumpt7.png" id="29_laeb5"]
+[ext_resource type="Texture2D" uid="uid://dmbkxlfwgd6om" path="res://Assets/PlayerDODGE/Hobbit - jumpt8.png" id="30_4synv"]
+[ext_resource type="Texture2D" uid="uid://bfm3g14ue7qnj" path="res://Assets/PlayerDODGE/Hobbit - jumpt9.png" id="31_0feu5"]
+[ext_resource type="Texture2D" uid="uid://ckfd2cfa35e3c" path="res://Assets/PlayerDODGE/Hobbit - jumpt10.png" id="32_xp2ue"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p1rrb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_iego5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vbefn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_yqqp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_3fyj3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_f4uy8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_no5to")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_no5to")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_826cn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_826cn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_prwt1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_prwt1")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"Atack",
+"speed": 11.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Nothing",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0em1d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_fev0h")
+}],
+"loop": true,
+"name": &"Atack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_t5dwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ycrxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ar42b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_cy74g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1h404")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_r3lwi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_s16fp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_jq7l3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ny5vg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_mb08f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_loadq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_omx63")
+}],
+"loop": false,
+"name": &"Death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_gqlbs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_v7t0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_yudak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_4iiv4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_xwfdi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_u401j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_laeb5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_4synv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_0feu5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_xp2ue")
+}],
+"loop": true,
+"name": &"Dodge",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mbwod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xpsv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n778e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_n2lpq")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_w6lge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5x8wa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_j6h2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ml7ln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_hktg5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_afe34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_73pjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_bssm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ut1bw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1hoq8")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 11.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_45w0t"]
+radius = 6.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5r3m1"]
+radius = 28.0179
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rro3x"]
+radius = 5.0
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 3
+script = ExtResource("1_3oddf")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+self_modulate = Color(0.905882, 0.603922, 0.733333, 1)
+clip_contents = true
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 5.0
+offset_bottom = 5.0
+rotation = 0.785398
+scale = Vector2(1.70846, 1.70846)
+pivot_offset = Vector2(4.40001, 4.423)
+color = Color(1, 0.913725, 0.898039, 0.160784)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+clip_contents = true
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 5.0
+offset_bottom = 5.0
+rotation = 0.579353
+scale = Vector2(2.43091, 2.43091)
+pivot_offset = Vector2(4.40001, 4.423)
+color = Color(1, 0.917647, 0.854902, 0.0705882)
+
+[node name="Explosion" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_p1rrb")
+animation = &"Atack"
+
+[node name="Animations" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -2)
+scale = Vector2(0.826, 1)
+sprite_frames = SubResource("SpriteFrames_0em1d")
+animation = &"Dodge"
+frame_progress = 0.556853
+
+[node name="Detectare_killZOne" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detectare_killZOne"]
+visible = false
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_45w0t")
+
+[node name="Range" type="CharacterBody2D" parent="."]
+collision_layer = 128
+collision_mask = 128
+
+[node name="ExplosionColision" type="CollisionShape2D" parent="Range"]
+visible = false
+shape = SubResource("CircleShape2D_5r3m1")
+disabled = true
+
+[node name="AtackTimer" type="Timer" parent="."]
+wait_time = 7.0
+
+[node name="DodgeTimer" type="Timer" parent="."]
+wait_time = 2.1
+
+[node name="colision" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -2)
+scale = Vector2(1, 1.14087)
+shape = SubResource("CircleShape2D_rro3x")
+
+[connection signal="body_entered" from="Detectare_killZOne" to="." method="_on_detectare_kill_z_one_body_entered"]
+[connection signal="timeout" from="AtackTimer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="DodgeTimer" to="." method="_on_dodge_timer_timeout"]
